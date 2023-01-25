@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //         let num1 = Number(prompt('정수1'));
+    //         let num2 = Number(prompt('정수2'));
+    //         document.write("<p>");
+    //             if(num1 > num2){
+    //                 document.write(num1)
+    //             } else {
+    //                 if(num2 > num1){
+    //                     document.write(num2);
+    //                 } else {
+    //                     document.write('same');
+    //                 }
+    // // if 문 안에 if문 있을수있음
+    //             }
+    //         document.write("</p>");
+            
+    //     let num = Number(prompt());
+    //     if(num % 2 == 0){
+    //         document.write('<p>even</p>');
+    //     }
+    //     // let num = Number(prompt());
+    //     // if(num % 2 != 0){
+    //     //     document.write('<p>odd</p>');
+    //     // }
+    //     else {
+
+    //     }
+
+    //     -------
+    //     if ~ else if ~ else
+    //     if (조건식1) {
+    //         조건식1이 참일때 실행되는 영역;
+    //     } else if(조건식2) {
+    //         조건식1은 거짓이고 조건식2는 참일때 실행되는 영역;
+    //     } else if(조건식3) {
+    //         조건식 1,2는 거짓이고 조건식3은 참일때 실행되는 영역;
+    //     } else {
+    //              위에있는 조건식이 모두 거짓일때 실행됨;    
+    //     //}
+        
+    //     let score = Number(prompt('score?'));
+    //     let grade;
+    //     if(score >= 90){
+    //         grade = 'A';
+    //     } else if(80 >= score && score < 90){
+    //         grade ='B';
+    //     } else if(70 >= score && score < 80){
+    //         grade = 'C';
+    //     } else {
+    //         grade = 'F';    
+    //     }
+    //     document.write('<p>당신의 점수는' + grade + '입니다</p>');
+    //     document.write(`<p>당신의 점수는 ${grade} 입니다 </p>`);
+
+        let year = Number(prompt('year?'));
+        console.log('hi')
+        let yr;
+        if(year % 4 == 0 && year % 100 == 0 && year % 400 == 0) {
+            yr = '윤년';
+        } else if (year % 4 == 0 && year % 100 == 0 && year % 400 != 0){
+            yr = '평년';
+        } else if (year % 4 == 0 && year % 100 != 0 && year % 400 != 0){
+            yr = '윤년';
+        } else if (year % 4 != 0 && year % 100 != 0 && year % 400 != 0){
+            yr = '평년';
+        }
+        document.write(`<p>${year}년도는 ${yr}입니다.</p>`);
+    </script>
+</body>
+</html>
